@@ -24,4 +24,4 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Set up Python
-      uses: XinSSS/Conf-for-Surge-Shadowrocket@master
+      uses: AndersonALAC/Conf-for-Surge-Shadowrocket@master

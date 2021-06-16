@@ -1,0 +1,12 @@
+name: auto-generate-conf
+description: auto generate shadowrocket conf
+
+runs:
+  using: "composite"
+  steps:
+    - name: Working
+      run: | 
+        cd ${{ github.action_path}}
+        pip install -r ./requirements.txt
+        python3 ./ssconf.py
+      shell: bash

@@ -10,3 +10,9 @@ runs:
         pip install -r ./requirements.txt
         python3 ./ssconf.py
       shell: bash
+      
+    - name: Auto-Commit
+      uses: "docker://cdssnc/auto-commit-github-action"
+      needs: Working
+      args: "auto update"
+      secrets: ["GITHUB_TOKEN"]
